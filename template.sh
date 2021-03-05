@@ -3,6 +3,7 @@
 # TODO: Write a brief description of what your script does.
 
 set -euo pipefail
+test "${DEBUG:-0}" = "1" && set -x
 
 # Logging utilities
 function log::_timestamp() { date +'%Y-%m-%dT%H:%M:%S%z'; }
